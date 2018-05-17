@@ -1,0 +1,9 @@
+E:\vs2017\Study\ConsoleAppTest\DesignModel\bin\Debug\netcoreapp2.0\DesignModel.deps.json
+E:\vs2017\Study\ConsoleAppTest\DesignModel\bin\Debug\netcoreapp2.0\DesignModel.dll
+E:\vs2017\Study\ConsoleAppTest\DesignModel\bin\Debug\netcoreapp2.0\DesignModel.pdb
+E:\vs2017\Study\ConsoleAppTest\DesignModel\obj\Debug\netcoreapp2.0\DesignModel.csprojResolveAssemblyReference.cache
+E:\vs2017\Study\ConsoleAppTest\DesignModel\obj\Debug\netcoreapp2.0\DesignModel.csproj.CoreCompileInputs.cache
+E:\vs2017\Study\ConsoleAppTest\DesignModel\obj\Debug\netcoreapp2.0\DesignModel.AssemblyInfoInputs.cache
+E:\vs2017\Study\ConsoleAppTest\DesignModel\obj\Debug\netcoreapp2.0\DesignModel.AssemblyInfo.cs
+E:\vs2017\Study\ConsoleAppTest\DesignModel\obj\Debug\netcoreapp2.0\DesignModel.dll
+E:\vs2017\Study\ConsoleAppTest\DesignModel\obj\Debug\netcoreapp2.0\DesignModel.pdb
