@@ -12,3 +12,17 @@ E:\vs2017\Study\ConsoleAppTest\ConsoleAppTest\obj\Debug\netcoreapp2.0\ConsoleApp
 E:\vs2017\Study\ConsoleAppTest\ConsoleAppTest\obj\Debug\netcoreapp2.0\ConsoleAppTest.csproj.CopyComplete
 E:\vs2017\Study\ConsoleAppTest\ConsoleAppTest\obj\Debug\netcoreapp2.0\ConsoleAppTest.dll
 E:\vs2017\Study\ConsoleAppTest\ConsoleAppTest\obj\Debug\netcoreapp2.0\ConsoleAppTest.pdb
+E:\vs2017\Study\DesignModel\ConsoleAppTest\ConsoleAppTest\bin\Debug\netcoreapp2.0\ConsoleAppTest.deps.json
+E:\vs2017\Study\DesignModel\ConsoleAppTest\ConsoleAppTest\bin\Debug\netcoreapp2.0\ConsoleAppTest.runtimeconfig.json
+E:\vs2017\Study\DesignModel\ConsoleAppTest\ConsoleAppTest\bin\Debug\netcoreapp2.0\ConsoleAppTest.runtimeconfig.dev.json
+E:\vs2017\Study\DesignModel\ConsoleAppTest\ConsoleAppTest\bin\Debug\netcoreapp2.0\ConsoleAppTest.dll
+E:\vs2017\Study\DesignModel\ConsoleAppTest\ConsoleAppTest\bin\Debug\netcoreapp2.0\ConsoleAppTest.pdb
+E:\vs2017\Study\DesignModel\ConsoleAppTest\ConsoleAppTest\bin\Debug\netcoreapp2.0\DesignModel.dll
+E:\vs2017\Study\DesignModel\ConsoleAppTest\ConsoleAppTest\bin\Debug\netcoreapp2.0\DesignModel.pdb
+E:\vs2017\Study\DesignModel\ConsoleAppTest\ConsoleAppTest\obj\Debug\netcoreapp2.0\ConsoleAppTest.csprojResolveAssemblyReference.cache
+E:\vs2017\Study\DesignModel\ConsoleAppTest\ConsoleAppTest\obj\Debug\netcoreapp2.0\ConsoleAppTest.csproj.CoreCompileInputs.cache
+E:\vs2017\Study\DesignModel\ConsoleAppTest\ConsoleAppTest\obj\Debug\netcoreapp2.0\ConsoleAppTest.AssemblyInfoInputs.cache
+E:\vs2017\Study\DesignModel\ConsoleAppTest\ConsoleAppTest\obj\Debug\netcoreapp2.0\ConsoleAppTest.AssemblyInfo.cs
+E:\vs2017\Study\DesignModel\ConsoleAppTest\ConsoleAppTest\obj\Debug\netcoreapp2.0\ConsoleAppTest.csproj.CopyComplete
+E:\vs2017\Study\DesignModel\ConsoleAppTest\ConsoleAppTest\obj\Debug\netcoreapp2.0\ConsoleAppTest.dll
+E:\vs2017\Study\DesignModel\ConsoleAppTest\ConsoleAppTest\obj\Debug\netcoreapp2.0\ConsoleAppTest.pdb

@@ -671,11 +671,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\vs2017\\Study\\ConsoleAppTest\\DesignModel\\DesignModel.csproj",
+      "projectUniqueName": "E:\\vs2017\\Study\\DesignModel\\ConsoleAppTest\\DesignModel\\DesignModel.csproj",
       "projectName": "DesignModel",
-      "projectPath": "E:\\vs2017\\Study\\ConsoleAppTest\\DesignModel\\DesignModel.csproj",
+      "projectPath": "E:\\vs2017\\Study\\DesignModel\\ConsoleAppTest\\DesignModel\\DesignModel.csproj",
       "packagesPath": "C:\\Users\\wsjun\\.nuget\\packages\\",
-      "outputPath": "E:\\vs2017\\Study\\ConsoleAppTest\\DesignModel\\obj\\",
+      "outputPath": "E:\\vs2017\\Study\\DesignModel\\ConsoleAppTest\\DesignModel\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",

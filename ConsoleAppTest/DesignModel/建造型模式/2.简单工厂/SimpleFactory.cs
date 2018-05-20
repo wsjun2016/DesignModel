@@ -2,29 +2,34 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace DesignModel._2.简单工厂
+namespace DesignModel.建造型模式._2.简单工厂
 {
     //简单工厂
     //只抽象一个产品类型
     //就一个工厂根据传入的种类字段，造出单个抽象产品的不同实例
-
+    [Serializable]
     public abstract class Car
     {
-        public abstract void Display();
+        public string Name { get; set; }
+        public void Display() {
+            Console.WriteLine(Name);
+        }
     }
+    [Serializable]
     public class DaZhong : Car
     {
-        public override void Display()
+        public DaZhong()
         {
-            Console.WriteLine("大众");
-        }
+            Name = "大众";
+        }     
     }
+    [Serializable]
     public class DongFeng : Car
     {
-        public override void Display()
+        public DongFeng()
         {
-            Console.WriteLine("东风");
-        }
+            Name = "东风";
+        }       
     }
 
     public class SimpleFactory
