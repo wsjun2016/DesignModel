@@ -1,11 +1,11 @@
-﻿using DesignModel.建造型模式._2.简单工厂;
+﻿using DesignModel.建造型模式._02.简单工厂;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
 
-namespace DesignModel.建造型模式._6.原型模式
+namespace DesignModel.建造型模式._06.原型模式
 {
     //原型模式
     //对象可以复制自己

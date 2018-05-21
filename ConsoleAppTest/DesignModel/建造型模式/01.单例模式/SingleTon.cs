@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace DesignModel.建造型模式._1.单例模式
+namespace DesignModel.建造型模式._01.单例模式
 {
     /// <summary>
     /// 单例模式

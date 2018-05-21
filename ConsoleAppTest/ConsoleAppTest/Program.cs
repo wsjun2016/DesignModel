@@ -1,12 +1,16 @@
-﻿using DesignModel.建造型模式._2.简单工厂;
-using DesignModel.建造型模式._3.工厂方法;
-using DesignModel.建造型模式._4.抽象工厂;
-using DesignModel.建造型模式._5.建造者模式;
-using DesignModel.建造型模式._6.原型模式;
-using DesignModel.建造型模式._1.单例模式;
+﻿using DesignModel.建造型模式._02.简单工厂;
+using DesignModel.建造型模式._03.工厂方法;
+using DesignModel.建造型模式._04.抽象工厂;
+using DesignModel.建造型模式._05.建造者模式;
+using DesignModel.建造型模式._06.原型模式;
+using DesignModel.建造型模式._01.单例模式;
 using System;
-using DesignModel.结构型模式._7.适配器模式;
-using DesignModel.结构型模式._8.桥接模式;
+using DesignModel.结构型模式._09.组合模式;
+using DesignModel.结构型模式._07.适配器模式;
+using DesignModel.结构型模式._08.桥接模式;
+using DesignModel.结构型模式._10.装饰者模式;
+using DesignModel.结构型模式._11.外观模式;
+
 
 namespace ConsoleAppTest
 {
@@ -154,6 +158,45 @@ namespace ConsoleAppTest
             //abstraction.Operation();
 
             #endregion
+
+            #region 组合模式
+
+            //Component leafA=new Leaf("leafA");
+            //leafA.Display(1);
+            //Component leafB = new Leaf("leafB");
+            //leafB.Display(1);
+
+            //Component complex=new ComplexComponent("complex");
+            //complex.Display(1);
+            //complex.Add(leafA);
+            //complex.Add(leafB);
+            //complex.Display(1);
+
+            #endregion
+
+            #region 装饰者模式
+
+            //Phone phone=new ApplePhone();
+            //phone.Print();
+
+            //Decorator decorator=new Sticker(phone);
+            //decorator.Print();
+
+            //Decorator d2=new Accessories(decorator);
+            //d2.Print();
+
+            #endregion
+
+            #region 外观模式
+
+            //Facade facade=new Facade();
+            //facade.Operation();
+
+            #endregion
+
+
+
+
 
             Console.ReadKey();
         }
