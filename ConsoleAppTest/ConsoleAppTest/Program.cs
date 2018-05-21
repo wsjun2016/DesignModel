@@ -10,6 +10,7 @@ using DesignModel.结构型模式._07.适配器模式;
 using DesignModel.结构型模式._08.桥接模式;
 using DesignModel.结构型模式._10.装饰者模式;
 using DesignModel.结构型模式._11.外观模式;
+using DesignModel.结构型模式._12.享元模式;
 
 
 namespace ConsoleAppTest
@@ -191,6 +192,43 @@ namespace ConsoleAppTest
 
             //Facade facade=new Facade();
             //facade.Operation();
+
+            #endregion
+
+            #region 享元模式
+
+            FlyweightFactory f=new FlyweightFactory();
+            f.Items.Add('A',new EnglishCharacter('A'));
+            f.Items.Add('B', new EnglishCharacter('B'));
+            f.Items.Add('C', new EnglishCharacter('C'));
+            f.Items.Add("天子", new ChineseCharacter("天子"));
+
+            //以下三个A 获取的 是同一个享元对象
+            EnglishCharacter A1 = f.GetCharacter('A') as EnglishCharacter;
+            A1.Operation(1);
+
+            EnglishCharacter A2 = f.GetCharacter('A') as EnglishCharacter;
+            A2.Operation(2);
+
+            EnglishCharacter A3 = f.GetCharacter('A') as EnglishCharacter;
+            A3.Operation(3);
+
+           
+            EnglishCharacter D = f.GetCharacter('D') as EnglishCharacter;
+            //如果没有，需要创建，并保存到享元工厂中
+            if (D == null)
+            {
+                D = new EnglishCharacter('D');
+                f.Items.Add('D',D);
+            }
+            D.Operation(1);
+
+            EnglishCharacter D2 = f.GetCharacter('D') as EnglishCharacter;
+            D2.Operation(3);
+
+            //使用中文
+            ChineseCharacter chineseCharacter = f.GetCharacter("天子") as ChineseCharacter;
+            chineseCharacter.Operation(3);
 
             #endregion
 
