@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace DesignModel.建造型模式._2.简单工厂
+namespace DesignModel.建造型模式._02.简单工厂
 {
     //简单工厂
     //只抽象一个产品类型

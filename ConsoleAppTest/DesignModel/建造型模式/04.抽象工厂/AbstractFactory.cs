@@ -1,10 +1,10 @@
-﻿using DesignModel.建造型模式._2.简单工厂;
-using DesignModel.建造型模式._3.工厂方法;
+﻿using DesignModel.建造型模式._02.简单工厂;
+using DesignModel.建造型模式._03.工厂方法;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace DesignModel.建造型模式._4.抽象工厂
+namespace DesignModel.建造型模式._04.抽象工厂
 {
     //抽象工厂
     //抽象工厂针对系列对象

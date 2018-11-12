@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace DesignModel.结构型模式._8.桥接模式
+namespace DesignModel.结构型模式._08.桥接模式
 {
     //桥接模式
     //将抽象与实现分离

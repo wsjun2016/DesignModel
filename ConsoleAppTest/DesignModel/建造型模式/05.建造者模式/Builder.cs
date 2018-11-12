@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace DesignModel.建造型模式._5.建造者模式
+namespace DesignModel.建造型模式._05.建造者模式
 {
     //建造者模式
     //包含 指挥者、建造者和产品

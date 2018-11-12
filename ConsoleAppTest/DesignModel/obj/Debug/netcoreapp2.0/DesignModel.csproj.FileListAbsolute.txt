@@ -16,3 +16,12 @@ E:\vs2017\Study\DesignModel\ConsoleAppTest\DesignModel\obj\Debug\netcoreapp2.0\D
 E:\vs2017\Study\DesignModel\ConsoleAppTest\DesignModel\obj\Debug\netcoreapp2.0\DesignModel.AssemblyInfo.cs
 E:\vs2017\Study\DesignModel\ConsoleAppTest\DesignModel\obj\Debug\netcoreapp2.0\DesignModel.dll
 E:\vs2017\Study\DesignModel\ConsoleAppTest\DesignModel\obj\Debug\netcoreapp2.0\DesignModel.pdb
+G:\vs2017\Play\DesignModel\ConsoleAppTest\DesignModel\bin\Debug\netcoreapp2.0\DesignModel.deps.json
+G:\vs2017\Play\DesignModel\ConsoleAppTest\DesignModel\bin\Debug\netcoreapp2.0\DesignModel.dll
+G:\vs2017\Play\DesignModel\ConsoleAppTest\DesignModel\bin\Debug\netcoreapp2.0\DesignModel.pdb
+G:\vs2017\Play\DesignModel\ConsoleAppTest\DesignModel\obj\Debug\netcoreapp2.0\DesignModel.csproj.CoreCompileInputs.cache
+G:\vs2017\Play\DesignModel\ConsoleAppTest\DesignModel\obj\Debug\netcoreapp2.0\DesignModel.AssemblyInfoInputs.cache
+G:\vs2017\Play\DesignModel\ConsoleAppTest\DesignModel\obj\Debug\netcoreapp2.0\DesignModel.AssemblyInfo.cs
+G:\vs2017\Play\DesignModel\ConsoleAppTest\DesignModel\obj\Debug\netcoreapp2.0\DesignModel.dll
+G:\vs2017\Play\DesignModel\ConsoleAppTest\DesignModel\obj\Debug\netcoreapp2.0\DesignModel.pdb
+G:\vs2017\Play\DesignModel\ConsoleAppTest\DesignModel\obj\Debug\netcoreapp2.0\DesignModel.csprojResolveAssemblyReference.cache

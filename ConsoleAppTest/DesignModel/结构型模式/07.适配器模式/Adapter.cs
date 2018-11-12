@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace DesignModel.结构型模式._7.适配器模式
+namespace DesignModel.结构型模式._07.适配器模式
 {
     //适配器模式
     //适配器模式注重转换

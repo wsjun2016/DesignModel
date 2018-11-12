@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace DesignModel.建造型模式._3.工厂方法
+namespace DesignModel.建造型模式._03.工厂方法
 {
     //工厂方法模式针对单个对象
     //抽象出来的工厂和抽象的产品是平级的
