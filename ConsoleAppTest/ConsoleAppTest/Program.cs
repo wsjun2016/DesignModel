@@ -11,7 +11,13 @@ using DesignModel.结构型模式._08.桥接模式;
 using DesignModel.结构型模式._10.装饰者模式;
 using DesignModel.结构型模式._11.外观模式;
 using DesignModel.结构型模式._12.享元模式;
-
+using DesignModel.结构型模式._13.代理模式;
+using DesignModel.行为型模式._14.模板方法;
+using Newtonsoft.Json;
+using DesignModel.行为型模式._15.命令模式;
+using DesignModel.行为型模式._16.迭代器模式;
+using System.Collections;
+using DesignModel.行为型模式._17.观察者模式;
 
 namespace ConsoleAppTest
 {
@@ -197,46 +203,210 @@ namespace ConsoleAppTest
 
             #region 享元模式
 
-            FlyweightFactory f=new FlyweightFactory();
-            f.Items.Add('A',new EnglishCharacter('A'));
-            f.Items.Add('B', new EnglishCharacter('B'));
-            f.Items.Add('C', new EnglishCharacter('C'));
-            f.Items.Add("天子", new ChineseCharacter("天子"));
+            //FlyweightFactory f=new FlyweightFactory();
+            //f.Items.Add('A',new EnglishCharacter('A'));
+            //f.Items.Add('B', new EnglishCharacter('B'));
+            //f.Items.Add('C', new EnglishCharacter('C'));
+            //f.Items.Add("天子", new ChineseCharacter("天子"));
 
-            //以下三个A 获取的 是同一个享元对象
-            EnglishCharacter A1 = f.GetCharacter('A') as EnglishCharacter;
-            A1.Operation(1);
+            ////以下三个A 获取的 是同一个享元对象
+            //EnglishCharacter A1 = f.GetCharacter('A') as EnglishCharacter;
+            //A1.Operation(1);
 
-            EnglishCharacter A2 = f.GetCharacter('A') as EnglishCharacter;
-            A2.Operation(2);
+            //EnglishCharacter A2 = f.GetCharacter('A') as EnglishCharacter;
+            //A2.Operation(2);
 
-            EnglishCharacter A3 = f.GetCharacter('A') as EnglishCharacter;
-            A3.Operation(3);
+            //EnglishCharacter A3 = f.GetCharacter('A') as EnglishCharacter;
+            //A3.Operation(3);
 
-           
-            EnglishCharacter D = f.GetCharacter('D') as EnglishCharacter;
-            //如果没有，需要创建，并保存到享元工厂中
-            if (D == null)
-            {
-                D = new EnglishCharacter('D');
-                f.Items.Add('D',D);
-            }
-            D.Operation(1);
 
-            EnglishCharacter D2 = f.GetCharacter('D') as EnglishCharacter;
-            D2.Operation(3);
+            //EnglishCharacter D = f.GetCharacter('D') as EnglishCharacter;
+            ////如果没有，需要创建，并保存到享元工厂中
+            //if (D == null)
+            //{
+            //    D = new EnglishCharacter('D');
+            //    f.Items.Add('D',D);
+            //}
+            //D.Operation(1);
 
-            //使用中文
-            ChineseCharacter chineseCharacter = f.GetCharacter("天子") as ChineseCharacter;
-            chineseCharacter.Operation(3);
+            //EnglishCharacter D2 = f.GetCharacter('D') as EnglishCharacter;
+            //D2.Operation(3);
+
+            ////使用中文
+            //ChineseCharacter chineseCharacter = f.GetCharacter("天子") as ChineseCharacter;
+            //chineseCharacter.Operation(3);
+
+            #endregion
+
+            #region 代理模式
+
+            //MathProxy proxy = new MathProxy();
+            //Console.WriteLine(proxy.Min(1,3));
+
+            #endregion
+
+            #region 模板方法
+
+            ////string json = "{\"SName\":\"张三\",\"SAge\":12}";
+            //string json = "{\"TName\":\"李四\",\"TAge\":32}";
+            //int actionId = 1002;
+
+            //AjaxResult result = null;
+            //switch (actionId)
+            //{
+            //    case 1001:
+            //        result = new StudentHandler().Process(json);
+            //        break;
+            //    case 1002:
+            //        result = new TeacherHandler().Process(json);
+            //        break;
+            //    default:
+            //        result = AjaxResult.Null;
+            //        Console.WriteLine("错误的接口！");
+            //        break;
+            //}
+
+            ////返回结果
+            //Console.WriteLine(JsonConvert.SerializeObject(result));
+
+            #endregion
+
+            #region 命令模式
+
+            //MyDocument document = new MyDocument();
+            //Command displayCommand = new DisplayCommand(document);
+            //CommandInvoker invoker = new CommandInvoker();
+            //invoker.SetCommand(displayCommand);
+            //invoker.ExecuteCommand();
+
+            //Command redoCommand = new RedoCommand(document);
+            //invoker.SetCommand(redoCommand).ExecuteCommand();
+
+            //Command undoCommand = new UndoCommand(document);
+            //invoker.SetCommand(undoCommand).ExecuteCommand();
+
+            #endregion
+
+            #region 迭代器模式
+
+            //int a = 1;
+            //IMyList list = new MyList();
+            //list.Add(a++);
+            //list.Add(a++);
+            //list.Add(a++);
+            //list.Add(a++);
+            //list.Add(a++);
+            //list.Add(a++);
+            //list.Add(a++);
+
+            ////获取当前聚合对象的迭代器
+            //IMyIterator iterator = list.GetIterator();
+
+            ////开始迭代
+            //while (iterator.MoveNext())
+            //{
+            //    Console.WriteLine(iterator.CurrentItem());
+            //    iterator.Next();
+            //}
+
+            #endregion
+
+            #region 使用框架自带的迭代器
+
+            //StudentList list = new StudentList();
+            //list.Add(new Student { SName="张三",SAge=10});
+            //list.Add(new Student { SName = "李三", SAge = 11 });
+            //list.Add(new Student { SName = "王三", SAge = 11 });
+            //list.Add(new Student { SName = "赵三", SAge = 12 });
+            //list.Add(new Student { SName = "钱三", SAge = 13 });
+            //list.Add(new Student { SName = "孙三", SAge = 14 });
+
+            ////只要有IEnumerator迭代器，就可以使用foreach进行迭代数据
+            //foreach (Student obj in list)
+            //    Console.WriteLine(obj.ToString());
+
+            #endregion
+
+            #region 观察者模式
+
+            //第一种实现，使用观察者接口
+            Subject subject = new BankAccount();            
+            subject.AddObserver(new Emailer("will@qq.com"));
+            subject.AddObserver(new Mobile("18282736255"));
+
+            subject.Status = 100;
+            subject.Work();
+
+            //第二种实现，使用Event事件
+            SubjectA subjectA = new BankAccountA();
+            subjectA.NotifyEvent += new NotifyEventHandler(new EmailerA("willA@qq.com").Update);
+            subjectA.NotifyEvent += new NotifyEventHandler(new MobileA("18282736255A").Update);
+            subjectA.Status = 100;
+            subjectA.Work();
 
             #endregion
 
 
 
-
-
             Console.ReadKey();
+        }
+
+        private static void SubjectA_NotifyEvent(object sender)
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    //IEnumerable就是框架自带的抽象聚合接口
+    public class StudentList : IEnumerable
+    {
+        public IEnumerator GetEnumerator()
+        {
+            return new StudentListEnumerator(this);
+        }
+        public StudentList()
+        {
+            _array = new Student[_capacity];
+        }
+
+        private Student[] _array;
+        private int _length = 0;
+        public int _capacity = 10;
+        public int Capacity => _capacity;
+        public int Length => _length;
+        public object GetElement(int index) => index<_length? _array[index]:throw new IndexOutOfRangeException();
+        public int Add(Student student)
+        {
+            if (_length < _capacity)
+                _array[_length++] = student;
+            else {
+                _capacity += 10;
+                Student[] tmp = new Student[_capacity];
+                _array.CopyTo(tmp, 0);
+                _array = tmp;
+                Add(student);
+            }
+            return _length;
+        }
+
+    }
+
+    //IEnumerator就是框架自带的抽象迭代器
+    public class StudentListEnumerator : IEnumerator
+    {
+        private StudentList _list;
+        private int _index = 0;
+        public StudentListEnumerator(StudentList list) => _list = list;
+        public object Current => _list.GetElement(_index++);
+
+        public bool MoveNext()
+        {
+            return _index < _list.Length;
+        }
+
+        public void Reset()
+        {
+            _index = 0;
         }
     }
 }
