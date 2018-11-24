@@ -18,6 +18,8 @@ using DesignModel.行为型模式._15.命令模式;
 using DesignModel.行为型模式._16.迭代器模式;
 using System.Collections;
 using DesignModel.行为型模式._17.观察者模式;
+using DesignModel.行为型模式._18.解释器模式;
+using DesignModel.行为型模式._19.中介者模式;
 
 namespace ConsoleAppTest
 {
@@ -329,23 +331,66 @@ namespace ConsoleAppTest
 
             #region 观察者模式
 
-            //第一种实现，使用观察者接口
-            Subject subject = new BankAccount();            
-            subject.AddObserver(new Emailer("will@qq.com"));
-            subject.AddObserver(new Mobile("18282736255"));
+            ////第一种实现，使用观察者接口
+            //Subject subject = new BankAccount();            
+            //subject.AddObserver(new Emailer("will@qq.com"));
+            //subject.AddObserver(new Mobile("18282736255"));
 
-            subject.Status = 100;
-            subject.Work();
+            //subject.Status = 100;
+            //subject.Work();
 
-            //第二种实现，使用Event事件
-            SubjectA subjectA = new BankAccountA();
-            subjectA.NotifyEvent += new NotifyEventHandler(new EmailerA("willA@qq.com").Update);
-            subjectA.NotifyEvent += new NotifyEventHandler(new MobileA("18282736255A").Update);
-            subjectA.Status = 100;
-            subjectA.Work();
+            ////第二种实现，使用Event事件
+            //SubjectA subjectA = new BankAccountA();
+            //subjectA.NotifyEvent += new NotifyEventHandler(new EmailerA("willA@qq.com").Update);
+            //subjectA.NotifyEvent += new NotifyEventHandler(new MobileA("18282736255A").Update);
+            //subjectA.Status = 100;
+            //subjectA.Work();
 
             #endregion
 
+            #region 解释器模式
+
+            //string roman = "五亿七千三百零二万六千四百五十二";
+            ////分解：((五)亿)((七千)(三百)(零)(二)万)((六千)(四百)(五十)(二))
+            ////只有个位没有带单位，是一位，其他带单位的都是2位字符
+
+            //MyContext context = new MyContext(roman);
+            //ArrayList list = new ArrayList();
+            //list.Add(new GeExpression());
+            //list.Add(new ShiExpression());
+            //list.Add(new BaiExpression());
+            //list.Add(new QianExpression());
+            //list.Add(new WanExpression());
+            //list.Add(new YiExpression());
+
+            //foreach (var exp in list)
+            //    (exp as MyExpression).Interpreter(context);
+
+            //Console.WriteLine(context.Data);
+
+
+            #endregion
+
+            #region 中介者模式
+
+            ////创建一个中介者
+            //Mediator chatroom = new ChatroomMediator();
+
+            ////创建一些同事类
+            //Colleague john = new Member("john");
+            //Colleague linda = new Member("linda");
+            //Colleague will = new Member("will");
+
+            ////将同事类注册到中介者中
+            //chatroom.Register(john).Register(linda).Register(will);
+
+            ////开始同事类之间的中介交互
+            //john.Send("linda", "hello");
+            //linda.Send("will", "How are you today?");
+            //will.Send("linda", "I'm fine");
+
+
+            #endregion
 
 
             Console.ReadKey();
