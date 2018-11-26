@@ -20,6 +20,7 @@ using System.Collections;
 using DesignModel.行为型模式._17.观察者模式;
 using DesignModel.行为型模式._18.解释器模式;
 using DesignModel.行为型模式._19.中介者模式;
+using DesignModel.行为型模式._20.职责链模式;
 
 namespace ConsoleAppTest
 {
@@ -389,6 +390,24 @@ namespace ConsoleAppTest
             //linda.Send("will", "How are you today?");
             //will.Send("linda", "I'm fine");
 
+
+            #endregion
+
+            #region 职责链模式
+
+            //MyOrderRequest request = new MyOrderRequest("扫把", 1001000);
+
+            ////实例化处理者
+            //Manager manager = new Manager("john");
+            //FinancialManager fmanager = new FinancialManager("linda");
+            //CEO ceo = new CEO("will");
+
+            ////设置职责链
+            //manager.NextHandler = fmanager;
+            //fmanager.NextHandler = ceo;
+
+            ////开始处理请求
+            //manager.RequestProcess(request);
 
             #endregion
 
