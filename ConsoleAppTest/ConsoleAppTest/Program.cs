@@ -21,6 +21,8 @@ using DesignModel.行为型模式._17.观察者模式;
 using DesignModel.行为型模式._18.解释器模式;
 using DesignModel.行为型模式._19.中介者模式;
 using DesignModel.行为型模式._20.职责链模式;
+using DesignModel.行为型模式._21.备忘录模式;
+using System.Collections.Generic;
 
 namespace ConsoleAppTest
 {
@@ -411,6 +413,41 @@ namespace ConsoleAppTest
 
             #endregion
 
+            #region 备忘录模式
+
+
+            //List<PersonalTelephone> list = new List<PersonalTelephone>
+            //{
+            //    new PersonalTelephone{Name="张三",Telephone="11111111111"},
+            //    new PersonalTelephone{Name="李四",Telephone="22222222222"},
+            //    new PersonalTelephone{Name="王五",Telephone="33333333333"},
+            //};
+
+            ////实例化一个 发起人Originator对象
+            //MobileOriginator originator = new MobileOriginator(list);
+            //originator.Show();
+
+            ////创建一个备忘录
+            //MobileMemento memento = originator.CreateMemento();
+
+            ////使用看守者来管理和保存备忘录
+            //MobileCaretaker caretaker = new MobileCaretaker();
+            //caretaker.MobileMemento = memento;
+
+            //Console.WriteLine("改变originator的状态数据");
+            ////改变发起人originator对象的状态
+            //originator.PersonalTelephones.RemoveAt(0);
+            //originator.Show();
+
+            //Console.WriteLine("恢复originator的状态数据");
+            ////使用备忘录恢复originator的数据
+            //originator.SetMementoFrom(caretaker.MobileMemento);
+            //originator.Show();
+            
+
+
+
+            #endregion
 
             Console.ReadKey();
         }
@@ -438,12 +475,13 @@ namespace ConsoleAppTest
         public int _capacity = 10;
         public int Capacity => _capacity;
         public int Length => _length;
-        public object GetElement(int index) => index<_length? _array[index]:throw new IndexOutOfRangeException();
+        public object GetElement(int index) => index < _length ? _array[index] : throw new IndexOutOfRangeException();
         public int Add(Student student)
         {
             if (_length < _capacity)
                 _array[_length++] = student;
-            else {
+            else
+            {
                 _capacity += 10;
                 Student[] tmp = new Student[_capacity];
                 _array.CopyTo(tmp, 0);
