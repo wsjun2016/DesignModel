@@ -23,6 +23,7 @@ using DesignModel.行为型模式._19.中介者模式;
 using DesignModel.行为型模式._20.职责链模式;
 using DesignModel.行为型模式._21.备忘录模式;
 using System.Collections.Generic;
+using DesignModel.行为型模式._22.策略模式;
 
 namespace ConsoleAppTest
 {
@@ -443,11 +444,39 @@ namespace ConsoleAppTest
             ////使用备忘录恢复originator的数据
             //originator.SetMementoFrom(caretaker.MobileMemento);
             //originator.Show();
-            
+
 
 
 
             #endregion
+
+            #region 策略模式
+
+            //策略模式的仿电影票业务的实现
+            //MovieTicket ticket=new MovieTicket(30);
+            //ticket.SetDiscount(StudentDiscount.DiscountName);
+            //Console.WriteLine($"学生的票价：{ticket.Calculate()}");
+
+            //ticket.SetDiscount(ChildDiscount.DiscountName);
+            //Console.WriteLine($"儿童的票价：{ticket.Calculate()}");
+
+            //ticket.SetDiscount(VIPDiscount.DiscountName);
+            //Console.WriteLine($"VIP的票价：{ticket.Calculate()}");
+
+            //策略模式的一般实现
+            //StrategyContext context=new StrategyContext();
+            //context.SetStrategy(new StrategyA());
+            //context.AlgorithmInterface();
+
+            //context.SetStrategy(new StrategyB());
+            //context.AlgorithmInterface();
+
+            //context.SetStrategy(new StrategyC());
+            //context.AlgorithmInterface();
+
+
+            #endregion
+
 
             Console.ReadKey();
         }
