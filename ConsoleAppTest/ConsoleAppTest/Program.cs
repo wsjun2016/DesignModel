@@ -24,6 +24,7 @@ using DesignModel.行为型模式._20.职责链模式;
 using DesignModel.行为型模式._21.备忘录模式;
 using System.Collections.Generic;
 using DesignModel.行为型模式._22.策略模式;
+using DesignModel.行为型模式._23.访问者模式;
 
 namespace ConsoleAppTest
 {
@@ -476,6 +477,24 @@ namespace ConsoleAppTest
 
 
             #endregion
+
+            #region 访问者模式
+
+            Element a=new ElementA();
+            //执行a自己的方法
+            a.SelfMethod();
+            //执行a在具体访问者VisitorA中扩展的方法
+            a.Accept(new VisitorA());
+            //执行a在具体访问者VisitorB中扩展的方法
+            a.Accept(new VisitorB());
+
+            Element b=new ElementB();
+            b.SelfMethod();
+            b.Accept(new VisitorA());
+            b.Accept(new VisitorB());
+
+            #endregion
+
 
 
             Console.ReadKey();
