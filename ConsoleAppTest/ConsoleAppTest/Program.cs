@@ -52,6 +52,13 @@ namespace ConsoleAppTest
             //Car dongfeng = SimpleFactory.Create(CarType.DongFeng);
             //dongfeng.Display();
 
+
+            //Car dazhong2 = SimpleFactory.Create(DaZhong.CarName);
+            //dazhong2.Display();
+
+            //Car dongfeng2 = SimpleFactory.Create(DongFeng.CarName);
+            //dongfeng2.Display();
+
             #endregion
 
             #region 工厂方法
@@ -84,7 +91,7 @@ namespace ConsoleAppTest
 
             #region 建造者模式
 
-            ////一般的建造者模式
+            ////同类产品的建造者模式
             //Director director = new Director();
             //IBuilder dellBuilder = new DellBuilder();
             //director.Construct(dellBuilder);
@@ -95,6 +102,20 @@ namespace ConsoleAppTest
             //director.Construct(lenoveBuilder);
             //Computer lenove = lenoveBuilder.GetComputer();
             //Console.WriteLine($"{lenove.Id}   {lenove.Name}");
+
+            ////不同产品的建造者模式
+            //BMDirector director=new BMDirector();
+            //BMCarBuilder bmcarBuilder=new BMCarBuilder();
+            //director.Construct(bmcarBuilder);
+            //var car = bmcarBuilder.GetProduct();
+            //Console.WriteLine($"{car.Name}  {car.Version}");
+
+
+            //BMCarManualBuilder bmCarManualBuilder=new BMCarManualBuilder();
+            //director.Construct(bmCarManualBuilder);
+            //var manual = bmCarManualBuilder.GetProduct();
+            //Console.WriteLine($"{manual.Name}  {manual.Version} {manual.TotalPage}");
+
 
             ////对外做扩展的建造者模式
             //Computer2Builder builder = new Computer2Builder();

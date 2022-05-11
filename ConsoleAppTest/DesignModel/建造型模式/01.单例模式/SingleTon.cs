@@ -41,4 +41,17 @@ namespace DesignModel.建造型模式._01.单例模式
 
 
     }
+
+    //使用Lazy<>泛型在需要的时候懒加载单例对象
+    public sealed class SingletonViaLazy
+    {
+        private static readonly Lazy<SingletonViaLazy> _instance = new Lazy<SingletonViaLazy>(()=>new SingletonViaLazy());
+        public static SingletonViaLazy Instance = _instance.Value;
+
+        private SingletonViaLazy() { }
+
+        public int Count { set; get; }
+    }
+
+
 }
