@@ -26,7 +26,7 @@ namespace DesignModel.行为型模式._23.访问者模式 {
         void Visit(ElementA elementA);
         void Visit(ElementB elementB);
 
-        //也可以不用知晓具体元素类的类型，但是需要在实现该Visit方法的时候，对具体的元素类型进行判断(可以搭配使用 状态模式)
+        //也可以不用知晓具体元素类的类型，但是需要在实现该Visit方法的时候，对具体的元素类型进行判断(可以搭配使用 职责链模式)
         //void Visit(Element element);
     }
 

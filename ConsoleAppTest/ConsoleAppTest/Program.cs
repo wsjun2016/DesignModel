@@ -25,6 +25,7 @@ using DesignModel.行为型模式._21.备忘录模式;
 using System.Collections.Generic;
 using DesignModel.行为型模式._22.策略模式;
 using DesignModel.行为型模式._23.访问者模式;
+using DesignModel.行为型模式._24.状态模式;
 
 namespace ConsoleAppTest
 {
@@ -480,22 +481,44 @@ namespace ConsoleAppTest
 
             #region 访问者模式
 
-            Element a=new ElementA();
-            //执行a自己的方法
-            a.SelfMethod();
-            //执行a在具体访问者VisitorA中扩展的方法
-            a.Accept(new VisitorA());
-            //执行a在具体访问者VisitorB中扩展的方法
-            a.Accept(new VisitorB());
+            //Element a=new ElementA();
+            ////执行a自己的方法
+            //a.SelfMethod();
+            ////执行a在具体访问者VisitorA中扩展的方法
+            //a.Accept(new VisitorA());
+            ////执行a在具体访问者VisitorB中扩展的方法
+            //a.Accept(new VisitorB());
 
-            Element b=new ElementB();
-            b.SelfMethod();
-            b.Accept(new VisitorA());
-            b.Accept(new VisitorB());
+            //Element b=new ElementB();
+            //b.SelfMethod();
+            //b.Accept(new VisitorA());
+            //b.Accept(new VisitorB());
 
             #endregion
 
+            #region 状态模式
 
+            //var order=new Order();
+            //order.ChangeState(new OrderedState());
+            //order.ActionOnState();
+
+            //order.ChangeState(new DeliverState());
+            //order.ActionOnState();
+
+            //order.ChangeState(new ConfirmState());
+            //order.ActionOnState();
+
+            //Console.WriteLine("---------------------------");
+
+            //var order2 = new Order();
+            //order2.ChangeState(new OrderedState());
+            //order2.ActionOnState();
+
+            //order2.ChangeState(new DeliverState());
+            //order2.CreationTime = DateTime.Parse("2021-01-01");
+            //order2.ActionOnState();
+
+            #endregion
 
             Console.ReadKey();
         }
