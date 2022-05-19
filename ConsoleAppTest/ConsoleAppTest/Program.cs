@@ -212,6 +212,8 @@ namespace ConsoleAppTest
 
             #region 装饰者模式
 
+            #region 示例代码一
+
             //Phone phone=new ApplePhone();
             //phone.Print();
 
@@ -220,6 +222,20 @@ namespace ConsoleAppTest
 
             //Decorator d2=new Accessories(decorator);
             //d2.Print();
+
+            #endregion
+
+            #region 示例代码二
+
+            //IDataSource dataSource = new MyDataSource(@"d:\test.txt");
+            //var encrypt = new EncryptDataSourceDecorator(dataSource);
+            //var compression = new CompressionDataSourceDecorator(encrypt);
+            //Console.WriteLine("---------写数据-------------");
+            //compression.Write();
+            //Console.WriteLine("---------读数据-------------");
+            //compression.Read();
+
+            #endregion
 
             #endregion
 
